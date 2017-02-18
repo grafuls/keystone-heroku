@@ -2,11 +2,10 @@
 // customising the .env file in your project's root folder.
 require('dotenv').config();
 
-// mongodb://<dbuser>:<dbpassword>@ds159497.mlab.com:59497/heroku_zl4qwbt1
-MONGODB_DB_USERNAME = "heroku_zl4qwbt1";
-MONGODB_DB_PASSWORD = "d3kaco1ohq35qv2lqd7e306859";
-MONGODB_DB_HOST = "ds159497.mlab.com:59497";
-APP_NAME = "heroku_zl4qwbt1";
+MONGODB_DB_USERNAME = "username";
+MONGODB_DB_PASSWORD = "password";
+MONGODB_DB_HOST = "host:59497";
+APP_NAME = "app";
 
 var connectionString = MONGODB_DB_USERNAME + ":" +  MONGODB_DB_PASSWORD + "@" + MONGODB_DB_HOST + '/' + APP_NAME;
 
