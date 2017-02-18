@@ -2,6 +2,14 @@
 // customising the .env file in your project's root folder.
 require('dotenv').config();
 
+// mongodb://<dbuser>:<dbpassword>@ds159497.mlab.com:59497/heroku_zl4qwbt1
+MONGODB_DB_USERNAME = "heroku_zl4qwbt1";
+MONGODB_DB_PASSWORD = "qum5net";
+MONGODB_DB_HOST = "ds159497.mlab.com:59497";
+APP_NAME = "heroku_zl4qwbt1";
+
+var connectionString = MONGODB_DB_USERNAME + ":" +  MONGODB_DB_PASSWORD + "@" + MONGODB_DB_HOST + '/' + APP_NAME;
+
 // Require keystone
 var keystone = require('keystone');
 
@@ -19,6 +27,8 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
+
+	'mongo': connectionString,
 
 	'auto update': true,
 	'session': true,
