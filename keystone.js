@@ -4,7 +4,7 @@ require('dotenv').config();
 
 // mongodb://<dbuser>:<dbpassword>@ds159497.mlab.com:59497/heroku_zl4qwbt1
 MONGODB_DB_USERNAME = "heroku_zl4qwbt1";
-MONGODB_DB_PASSWORD = "qum5net";
+MONGODB_DB_PASSWORD = "d3kaco1ohq35qv2lqd7e306859";
 MONGODB_DB_HOST = "ds159497.mlab.com:59497";
 APP_NAME = "heroku_zl4qwbt1";
 
