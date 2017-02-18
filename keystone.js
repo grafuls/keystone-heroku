@@ -15,7 +15,7 @@ var keystone = require('keystone');
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
-keystone.set('cloudinary config', 'cloudinary://595672238391946:UDTLmuywZOGg49PBOH5IdBcwdjg@grafuls' );
+keystone.set('cloudinary config', 'cloudinary://app:pass@user' );
 
 keystone.init({
 	'name': 'keystone-heroku',
