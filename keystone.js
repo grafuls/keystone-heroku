@@ -31,6 +31,7 @@ keystone.import('models');
 // Setup common locals for your templates. The following are required for the
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
 // for each request) should be added to ./routes/middleware.js
+keystone.set('cloudinary config', 'cloudinary://595672238391946:UDTLmuywZOGg49PBOH5IdBcwdjg@grafuls' );
 keystone.set('locals', {
 	_: require('lodash'),
 	env: keystone.get('env'),
